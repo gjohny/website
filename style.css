@@ -1,0 +1,208 @@
+/* * {
+  border-width: 1;
+  border-style: dotted;
+  border-color: red;
+} */
+
+:root {
+  --font-family: courier, monospace;
+  --bg-color: #000000;
+  --primary-color: #171b20;
+  --secondary-color: #393e46;
+  --primary-shadow: #0092ca;
+  --secondary-shadow: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--secondary-shadow);
+  font-family: var(--font-family);
+}
+
+.main-container {
+  display: flex;
+  color: var(--secondary-shadow);
+  height: 300%;
+}
+
+.navbar {
+  width: 20%;
+  background-color: var(--secondary-color);
+  padding: 1vw;
+}
+
+.title-home {
+  justify-items: center;
+  color: var(--secondary-color);
+}
+
+.title {
+  justify-items: center;
+}
+
+.nav-items {
+  position: sticky;
+  top: 50;
+  font-size: 100%;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--secondary-shadow);
+  justify-items: end;
+  font-weight: 50;
+  font-size: large;
+}
+
+li {
+  margin-bottom: 10%;
+}
+
+.content {
+  width: 80%;
+  background-color: var(--primary-color);
+}
+
+.content-main {
+  width: 80%;
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--bg-color),
+    var(--primary-shadow)
+  );
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.intro {
+  height: 100vh;
+  padding: 10%;
+}
+
+.intro > h2 {
+  margin-top: 30%;
+}
+
+.intro > h1 {
+  font-size: 100px;
+  margin: 0;
+  color: var(--primary-shadow);
+}
+
+.contact {
+  padding: 10%;
+}
+
+.portfolio {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.portfolio-title {
+  align-content: center;
+  justify-items: center;
+}
+
+.project {
+  padding: 5%;
+  width: 70%;
+  margin-bottom: 10%;
+  box-shadow: 0.5rem 0.5rem var(--bg-color),
+    -0.5rem -0.5rem var(--primary-shadow);
+  border-radius: 5px;
+}
+
+.project-right {
+  justify-self: end;
+}
+
+.project-button {
+  background-color: var(--secondary-color);
+  border-radius: 20%;
+  font-size: medium;
+  padding: 0 5 0 5;
+}
+
+.qual {
+  margin: 5%;
+}
+
+.qual-title {
+  justify-self: center;
+}
+
+.pdf {
+  justify-self: center;
+  height: 500;
+  margin-bottom: 10%;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-self: auto;
+  margin: 5%;
+}
+
+.skill {
+  width: 20%;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  border-width: 1;
+  border-style: solid;
+  border-color: var(--secondary-shadow);
+  border-radius: 5px;
+  padding: 5%;
+}
+
+.service-title {
+  justify-self: center;
+}
+
+.service {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.service > div {
+  width: 45%;
+  border-style: solid;
+  border-color: var(--secondary-shadow);
+  border-radius: 5px;
+}
+
+.service-card-image {
+  height: 30%;
+  /* border-bottom: var(--secondary-shadow);
+      border-width: 1;
+      border-style: dotted; */
+  padding: 5%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service-card-desc {
+  padding: 5%;
+}
