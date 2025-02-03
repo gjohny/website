@@ -3,15 +3,21 @@
   <head>
     <title>Githin Johny</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" href="style.css" />
+    <link id="stylesheet" rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <div class="animate"></div>
+    <div class="animate animate2"></div>
+    <div class="animate animate3"></div>
     <div class="main-container">
       <div class="navbar">
         <div class="title">
           <h1>Githin Johny</h1>
         </div>
+        <button onclick="toggleStyleSheet()" role="button" class="style-button">
+          <span class="text">Toggle Style</span>
+        </button>
         <nav class="nav-items">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,8 +36,10 @@
           </div>
           <div class="pdf">
             <iframe
-              height="500"
-              src="https://docs.google.com/document/d/1anXKy2ZrwdN9YSJW0sFGgo8aUE4Q7vvG/edit?usp=sharing&ouid=102445603489319976217&rtpof=true&sd=true"
+              src="https://drive.google.com/file/d/1u4kErhTek6_1oJ45Ny1BmEdf_F3NL_EP/preview"
+              width="640"
+              height="480"
+              allow="autoplay"
             ></iframe>
             <p>
               Download my resume
@@ -42,47 +50,74 @@
             </p>
           </div>
 
-          <h1>Skills</h1>
-          <div class="skill-list">
-            <div class="skill">
-              <h2>C++</h2>
+          <div class="skill-container">
+            <div class="skill-title">
+              <h1>Skills</h1>
             </div>
-            <div class="skill">
-              <h2>Python</h2>
+            <div class="skill-list">
+              <div class="skill">
+                <h2>C++</h2>
+                <img src="c.png" alt="C++ logo" />
+              </div>
+              <div class="skill">
+                <h2>Python</h2>
+                <img src="py.png" alt="Python logo" />
+              </div>
+              <div class="skill">
+                <h2>PostgreSQL</h2>
+                <img src="pos.png" alt="PostgreSQL logo" />
+              </div>
             </div>
-            <div class="skill">
-              <h2>PostgreSQL</h2>
+            <div class="skill-title interest-section">
+              <h1>Interests</h1>
             </div>
-          </div>
-          <h1>Interests</h1>
-          <div class="skill-list">
-            <div class="skill">
-              <h2>Backend Development</h2>
-              <p>
-                Focuses on building and maintaining the server-side logic,
-                databases, and APIs that power applications and ensure smooth
-                communication between the frontend and backend.
-              </p>
-            </div>
-            <div class="skill">
-              <h2>Cloud Computing</h2>
-              <p>
-                Delivers computing services like storage, processing, and
-                networking over the internet, enabling on-demand scalability and
-                remote accessibility.
-              </p>
-            </div>
-            <div class="skill">
-              <h2>Robotics & Computer Vision</h2>
-              <p>
-                Combines robotics with visual processing techniques to enable
-                machines to perceive, interpret, and interact with their
-                environment using visual data.
-              </p>
+            <div class="skill-list interest-section">
+              <div class="skill">
+                <h2>Backend Development</h2>
+                <p>
+                  Focuses on building and maintaining the server-side logic,
+                  databases, and APIs that power applications and ensure smooth
+                  communication between the frontend and backend.
+                </p>
+                <a
+                  href="https://www.coursera.org/articles/back-end-developer"
+                  class="style-button interest"
+                  >Learn more from Coursera</a
+                >
+              </div>
+              <div class="skill">
+                <h2>Cloud Computing</h2>
+                <p>
+                  Delivers computing services like storage, processing, and
+                  networking over the internet, enabling on-demand scalability
+                  and remote accessibility.
+                </p>
+                <a
+                  href="https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing"
+                  class="style-button learn"
+                >
+                  Learn more from Microsoft
+                </a>
+              </div>
+              <div class="skill">
+                <h2>Robotics & Computer Vision</h2>
+                <p>
+                  Combines robotics with visual processing techniques to enable
+                  machines to perceive, interpret, and interact with their
+                  environment using visual data.
+                </p>
+                <a
+                  href="https://www.ibm.com/think/topics/computer-vision"
+                  class="style-button learn"
+                >
+                  Learn more from IBM
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="functions.js"></script>
   </body>
 </html>

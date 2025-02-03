@@ -6,18 +6,22 @@
   </head>
 
   <body>
+    <div class="animate"></div>
+    <div class="animate animate2"></div>
+    <div class="animate animate3"></div>
     <div class="main-container">
       <div class="navbar">
         <div class="title-home">
           <h1>Githin Johny</h1>
         </div>
+        <button onclick="toggleStyleSheet()" role="button" class="style-button">
+          <span class="text">Toggle Style</span>
+        </button>
         <nav class="nav-items">
           <ul>
             <li><a href="index_HTML.html">Home</a></li>
             <li><a href="portfolio_HTML.html">Portfolio</a></li>
-            <li>
-              <a href="qualifications_HTML.html">Qualifications</a>
-            </li>
+            <li><a href="qualifications_HTML.html">Qualifications</a></li>
             <li><a href="service_HTML.html">Service</a></li>
           </ul>
         </nav>
@@ -25,23 +29,51 @@
 
       <div class="content-main">
         <div class="intro">
+          <img
+            src="headshot.png"
+            alt="Headshot of Githin Johny"
+            class="headshot1"
+            id="pic"
+          />
+
           <h2>The name is</h2>
           <h1>Githin Johny</h1>
           <p>Welcome to my world</p>
         </div>
 
-        <div class="contact">
-          <h2>About Me</h2>
-          <p>
-            I'm a current engineerinig student at Texas A&M University, pusing
-            my degree in Commputer Engineering. I am originally from El Paso,
-            Texas. My interests include going to the gym, playing sports, nad
-            hanging out with friends.
-          </p>
-          <h2>Contact Me!</h2>
-          <p>Insert relevant links here.</p>
+        <div class="info">
+          <div class="headshot-container">
+            <img
+              src="headshot.png"
+              alt="Headshot of Githin Johny"
+              class="headshot2"
+              id="pic"
+            />
+          </div>
+          <div class="about">
+            <h2>About Me</h2>
+            <p>
+              I'm a current engineering student at Texas A&M University, pursing
+              my degree in Computer Engineering. I am originally from El Paso,
+              Texas. My interests include going to the gym, playing sports, and
+              hanging out with friends.
+            </p>
+          </div>
+          <div class="contact">
+            <h2>Contact Me!</h2>
+            <p>
+              Email: githinjohny@gmail.com</a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/githin-johny/"
+                >Click for my Linkedin</a
+              >
+            </p>
+            <p><a href="https://github.com/gjohny"> Click for my Github </a></p>
+          </div>
         </div>
       </div>
     </div>
+    <script src="functions.js"></script>
   </body>
 </html>

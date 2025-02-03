@@ -3,15 +3,28 @@
   <head>
     <title>Githin Johny</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" href="style.css" />
+    <link id="stylesheet" rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <div>
+      <img
+        src="service_background.jpg"
+        alt="people putting in their hand together as a team"
+        class="service_background"
+      />
+    </div>
+    <div class="animate"></div>
+    <div class="animate animate2"></div>
+    <div class="animate animate3"></div>
     <div class="main-container">
       <div class="navbar">
         <div class="title">
           <h1>Githin Johny</h1>
         </div>
+        <button onclick="toggleStyleSheet()" role="button" class="style-button">
+          <span class="text">Toggle Style</span>
+        </button>
         <nav class="nav-items">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,30 +43,96 @@
 
         <div class="service">
           <div class="service-card">
-            <div class="service-card-image">
-              <h1>El Paso Fighting Hunger Food Bank</h1>
+            <div class="service-card-image1 service-card-image">
+              <img
+                src="sesi.png"
+                class="sesi_logo"
+                alt="cartoon of a group of individuals as being watered plants, with the aim of symbolizing growing together"
+              />
             </div>
             <div class="service-card-desc">
+              <h1>Student-led Environmental Stewardship Initiative (SESI)</h1>
               <h4>
-                Volunteer at the El Paso food pantry handing out food to the
-                less fortunate during dire times such as the COVID-19 pandemic.
+                As a member of the Student-led Environmental Stewardship
+                Initiative (SESI), I played an active role in promoting
+                environmental awareness, particularly in the border region. Our
+                club carried out various service projects focused on
+                sustainability and conservation. One of our biggest projects
+                involved securing and utilizing a $300 environmental grant to
+                build a Hügelkultur mound at Keystone Heritage Park in El Paso,
+                which helps improve soil health and promote biodiversity.
+                Through this initiative and other activities like community
+                cleanups and educational outreach, we worked to spread knowledge
+                about sustainable practices and encouraged greater environmental
+                responsibility within our local community.
               </h4>
+              <a
+                href="https://www.instagram.com/cate_sesi_club/"
+                class="style-button learn"
+                >Learn more</a
+              >
             </div>
           </div>
-          <div>
+          <div class="service-card">
             <div class="service-card-image">
-              <h1>Mentorship</h1>
+              <img
+                src="food_bank.jpeg"
+                alt="EL Paso fighting Hunger Food Bank on delivery truck logo"
+              />
             </div>
             <div class="service-card-desc">
+              <h1>El Paso Fighting Hunger Food Bank</h1>
               <h4>
-                Active member within the IEEE mentorship group offering insight,
-                guidance and support to peers with similar career interests and
-                goals.
+                At the El Paso Fighting Hunger Food Bank, I volunteered to help
+                distribute food to people and families in need, especially
+                during critical times like the COVID-19 pandemic. Our efforts
+                aimed to support the less fortunate by provided access to
+                important essential food iterms and long-term supplies.
+                Volunteering at the food bank allowed me to witness firsthand
+                the impact of poverty and food insecurity in our community.
+                Through teamwork and dedication, we provided much-needed relief
+                to struggling families, fostering a stronger and more
+                compassionate El Paso community. It was an amazing experience to
+                be a helping hand and to know that I can make a personal impact
+                in people lives, no matter how small.
               </h4>
+              <a
+                href="https://elpasoansfightinghunger.org/"
+                class="style-button learn"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-card-image">
+              <img
+                src="mentor.png"
+                alt="cartoon of a group of individuals as being watered plants, with the aim of symbolizing growing together"
+              />
+            </div>
+            <div class="service-card-desc">
+              <h1>Mentorship</h1>
+              <h4>
+                As an active member of the Institute of Electrical and
+                Electronics Engineers (IEEE) Mentorship Group, I provided
+                guidance and support to peers with similar career interests and
+                goals. This experience has given me shared insights on academic
+                and professional development. In the same way, I am able to help
+                others navigate challenges in engineering and technology, the
+                same challlanges that I faced earlier in my career.. This
+                experience allowed me to build strong connections, enhance my
+                leadership skills, and create an engineering community. Being
+                part of this group not only helped others grow but also gave me
+                the opportunity to develop personally and professionally.
+              </h4>
+              <a href="https://ieee-tamu.org/" class="style-button learn"
+                >Learn more</a
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="functions.js"></script>
   </body>
 </html>

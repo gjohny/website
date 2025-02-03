@@ -3,15 +3,21 @@
   <head>
     <title>Githin Johny</title>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <link rel="stylesheet" href="style.css" />
+    <link id="stylesheet" rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <div class="animate"></div>
+    <div class="animate animate2"></div>
+    <div class="animate animate3"></div>
     <div class="main-container">
       <div class="navbar">
         <div class="title">
           <h1>Githin Johny</h1>
         </div>
+        <button onclick="toggleStyleSheet()" role="button" class="style-button">
+          <span class="text">Toggle Style</span>
+        </button>
         <nav class="nav-items">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,32 +35,52 @@
             <h1>Portfolio</h1>
           </div>
 
-          <div class="project">
+          <div class="portfolio-scroll">
+            <a href="#p1" class="scroll-link">1</a>
+            <a href="#p2" class="scroll-link">2</a>
+            <a href="#p3" class="scroll-link">3</a>
+          </div>
+
+          <div class="project" id="p1">
             <h1>IGNITORS Sounding Rocket Team</h1>
             <h4>
-              Configured ESP32 circuit board to defevlop ground support
-              electronic for rocket that relays live telemtry data.
+              Configured ESP32 circuit board to program ground support
+              electronics for a rocket that relays live telemetry data.
             </h4>
-            <a href="" class="project-button">link</a>
+            <img src="ignitors.png" alt="SOMTECH IGNITORS Logo" />
+            <a href="https://somtech.mx/ignitors" class="style-button"
+              >Link to more info</a
+            >
           </div>
-          <div class="project project-right">
+          <div class="project project-right" id="p2">
             <h1>Food/Calorie Intake Tracker</h1>
             <h4>
               Developed full-stack web application with user login to track
               nutrition and goals.
             </h4>
-            <a href="" class="project-button">link</a>
+            <img src="foodtracker.png" alt="SOMTECH IGNITORS Logo" />
+            <a
+              href="https://food-tracker-githin-johnys-projects.vercel.app/"
+              class="style-button"
+              >Link to web app</a
+            >
           </div>
-          <div class="project">
+          <div class="project" id="p3">
             <h1>Automated Coffee Machine</h1>
             <h4>
-              Develop automated coffee machine using rasberry pi and arduino to
-              streamline coffee creation process.
+              During an ARM sponsored hardware Hackathon, my team and I
+              developed an automated coffee machine using a Rasberry Pi and
+              arduino to streamline coffee creation process.
             </h4>
-            <a href="" class="project-button">link</a>
+            <img src="coffee.png" alt="SOMTECH IGNITORS Logo" />
+            <p>
+              (we didn't take any pictures :/, but here is one of a coffee
+              machine :)
+            </p>
           </div>
         </div>
       </div>
     </div>
+    <script src="functions.js"></script>
   </body>
 </html>
