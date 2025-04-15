@@ -27,6 +27,12 @@ window.onload = function () {
   // 2 (a) get stylesheet name from local storage hint: localStorage.getItem(name)
   saved = localStorage.getItem("href");
 
+  if (!saved) {
+    saved = "style.css";
+    localStorage.setItem("href", saved);
+    return;
+  }
+
   // 2 (b) get html style element by ID
   elem = document.getElementById("stylesheet");
 
